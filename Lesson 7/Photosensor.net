@@ -1,7 +1,7 @@
 * /Users/league/Desktop/Level-1/Lesson 7/Photosensor.asc
 V1 N001 0 9V Rser=0
 R1 N001 Vb 12.1K
-R2 Vb 0 50K
+R2 Vb 0 {Rp}
 Q1 N001 Vb P001 0 2N2222
 R3 P001 VLED 162
 D1 VLED 0 WP710A10QBC-2
@@ -12,5 +12,6 @@ D1 VLED 0 WP710A10QBC-2
 .lib /Users/league/Library/Application Support/LTspice/lib/cmp/standard.bjt
 .lib LTSpice/WP710A10QBC.SP3
 .tran 0 1ms 0ms 10us startup
+.step param Rp 5k 20k 5k
 .backanno
 .end

@@ -1,21 +1,25 @@
 Circuit: * /Users/league/Desktop/Level-1/Lesson 7/Photosensor.asc
 
 .OP point found by inspection.
+.step rp=5000
+.step rp=10000
+.step rp=15000
+.step rp=20000
 
-Date: Sat Jul 21 10:57:17 2018
-Total elapsed time: 0.035 seconds.
+Date: Sat Jul 21 11:28:28 2018
+Total elapsed time: 0.135 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 303
-traniter = 303
-tranpoints = 138
-accept = 135
-rejected = 3
+totiter = 292
+traniter = 292
+tranpoints = 134
+accept = 132
+rejected = 2
 matrix size = 9
 fillins = 0
 solver = Normal
-Matrix Compiler1: 528 object code size  0.1/0.1/[0.0]
-Matrix Compiler2: off
+Matrix Compiler1:      30 opcodes  0.2/0.0/[0.0]
+Matrix Compiler2:      57 opcodes
 
