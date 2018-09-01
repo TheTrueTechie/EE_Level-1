@@ -1,0 +1,18 @@
+*
+V1 N001 0 9V
+R1 N001 Vb 175K
+Q1 N001 Vb N002 0 2N2222
+R2 Vb 0 175K
+Rt Vb 0 {Rp}
+R3 N002 VLED 47.5
+D1 VLED 0 WP710A10QBC-2
+.model D D
+.lib /Users/league/Library/Application Support/LTspice/lib/cmp/standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib /Users/league/Library/Application Support/LTspice/lib/cmp/standard.bjt
+.lib WP710A10QBC.SP3
+.tran 0 1ms 0 1us startup
+.step param Rp 80K 800K 20K
+.backanno
+.end
