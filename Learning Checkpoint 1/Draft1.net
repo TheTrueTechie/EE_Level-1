@@ -1,0 +1,12 @@
+* /Users/league/Documents/LTspice/Draft1.asc
+V1 N001 0 9V
+R1 D1 N001 166R
+D1 D1 D1_2 WP710A10QBC-2
+R2 D2 D1_2 166R
+D2 D2 0 WP710A10QBC-2
+.model D D
+.lib /Users/league/Library/Application Support/LTspice/lib/cmp/standard.dio
+.lib WP710A10QBC.SP3
+.tran 0 1ms 0 1us startup
+.backanno
+.end
