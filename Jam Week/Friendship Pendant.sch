@@ -10547,6 +10547,75 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/3039.pdf"&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="CS12ANW03">
+<description>&lt;NKK SWITCHES - CS12ANW03 - SWITCH, SLIDE, SPDT, 3A, 250V, TH&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="CS12ANW03">
+<description>&lt;b&gt;CS12ANW03&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="0" y="-4.7" drill="1.6" diameter="2.37"/>
+<pad name="2" x="0" y="0" drill="1.6" diameter="2.37"/>
+<pad name="3" x="0" y="4.7" drill="1.6" diameter="2.37"/>
+<text x="-0.614" y="7.968" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="-0.614" y="7.968" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-3.5" y1="7" x2="3.5" y2="7" width="0.2" layer="51"/>
+<wire x1="3.5" y1="7" x2="3.5" y2="-7" width="0.2" layer="51"/>
+<wire x1="3.5" y1="-7" x2="-3.5" y2="-7" width="0.2" layer="51"/>
+<wire x1="-3.5" y1="-7" x2="-3.5" y2="7" width="0.2" layer="51"/>
+<wire x1="-3.5" y1="-7" x2="-3.5" y2="7" width="0.2" layer="21"/>
+<wire x1="-3.5" y1="7" x2="3.5" y2="7" width="0.2" layer="21"/>
+<wire x1="3.5" y1="7" x2="3.5" y2="-7" width="0.2" layer="21"/>
+<wire x1="3.5" y1="-7" x2="-3.5" y2="-7" width="0.2" layer="21"/>
+<circle x="-4.654" y="-4.683" radius="0.123" width="0.2" layer="25"/>
+</package>
+</packages>
+<symbols>
+<symbol name="CS12ANW03">
+<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<text x="16.51" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="16.51" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="0" y="0" length="middle"/>
+<pin name="2" x="0" y="-2.54" length="middle"/>
+<pin name="3" x="20.32" y="0" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CS12ANW03" prefix="S">
+<description>&lt;b&gt;NKK SWITCHES - CS12ANW03 - SWITCH, SLIDE, SPDT, 3A, 250V, TH&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://www.nkkswitches.com/pdf/cs.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="CS12ANW03" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CS12ANW03">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ALLIED_NUMBER" value="70228233" constant="no"/>
+<attribute name="ALLIED_PRICE-STOCK" value="https://www.alliedelec.com/nkk-switches-cs12anw03/70228233/" constant="no"/>
+<attribute name="DESCRIPTION" value="NKK SWITCHES - CS12ANW03 - SWITCH, SLIDE, SPDT, 3A, 250V, TH" constant="no"/>
+<attribute name="HEIGHT" value="mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="NKK Switches" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="CS12ANW03" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="633-CS12ANW03" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=633-CS12ANW03" constant="no"/>
+<attribute name="RS_PART_NUMBER" value="1251847" constant="no"/>
+<attribute name="RS_PRICE-STOCK" value="http://uk.rs-online.com/web/p/products/1251847" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -10881,6 +10950,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/3039.pdf"&gt;
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="S1" library="CS12ANW03" deviceset="CS12ANW03" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11125,13 +11195,13 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/3039.pdf"&gt;
 <instance part="X_9" gate="G$1" x="68.58" y="27.94" smashed="yes"/>
 <instance part="X_10" gate="G$1" x="-15.24" y="45.72" smashed="yes"/>
 <instance part="X_4" gate="G$1" x="127" y="-43.18" smashed="yes"/>
-<instance part="X_2" gate="G$1" x="-58.42" y="-15.24" smashed="yes"/>
-<instance part="U1" gate="G$1" x="-58.42" y="35.56" smashed="yes" rot="R270">
-<attribute name="NAME" x="-50.8" y="-6.35" size="1.778" layer="95" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="-53.34" y="-6.35" size="1.778" layer="96" rot="R270" align="center-left"/>
+<instance part="X_2" gate="G$1" x="-73.66" y="-22.86" smashed="yes"/>
+<instance part="U1" gate="G$1" x="-73.66" y="27.94" smashed="yes" rot="R270">
+<attribute name="NAME" x="-66.04" y="-13.97" size="1.778" layer="95" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="-68.58" y="-13.97" size="1.778" layer="96" rot="R270" align="center-left"/>
 </instance>
-<instance part="P+1" gate="VCC" x="-60.96" y="40.64" smashed="yes">
-<attribute name="VALUE" x="-63.5" y="38.1" size="1.778" layer="96" rot="R90"/>
+<instance part="P+1" gate="VCC" x="-50.8" y="40.64" smashed="yes">
+<attribute name="VALUE" x="-53.34" y="38.1" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="P+2" gate="VCC" x="-15.24" y="68.58" smashed="yes">
 <attribute name="VALUE" x="-17.78" y="66.04" size="1.778" layer="96" rot="R90"/>
@@ -11159,6 +11229,10 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/3039.pdf"&gt;
 </instance>
 <instance part="P+10" gate="VCC" x="45.72" y="66.04" smashed="yes">
 <attribute name="VALUE" x="43.18" y="63.5" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="S1" gate="G$1" x="-71.12" y="33.02" smashed="yes">
+<attribute name="NAME" x="-72.39" y="40.64" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="-72.39" y="38.1" size="1.778" layer="96" align="center-left"/>
 </instance>
 </instances>
 <busses>
@@ -11328,7 +11402,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/3039.pdf"&gt;
 <segment>
 <pinref part="U1" gate="G$1" pin="NEGATIVE_CONTACT_PAD"/>
 <pinref part="X_2" gate="G$1" pin="0"/>
-<wire x1="-58.42" y1="-15.24" x2="-58.42" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="-22.86" x2="-73.66" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -11451,14 +11525,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/3039.pdf"&gt;
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="1"/>
-<pinref part="U1" gate="G$1" pin="2"/>
-<wire x1="-58.42" y1="35.56" x2="-60.96" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="-60.96" y1="38.1" x2="-60.96" y2="35.56" width="0.1524" layer="91"/>
-<junction x="-60.96" y="35.56"/>
-<pinref part="P+1" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
 <pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
 <wire x1="-10.16" y1="33.02" x2="-10.16" y2="30.48" width="0.1524" layer="91"/>
@@ -11503,6 +11569,11 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/3039.pdf"&gt;
 <pinref part="P+5" gate="VCC" pin="VCC"/>
 <wire x1="83.82" y1="5.08" x2="83.82" y2="2.54" width="0.1524" layer="91"/>
 <junction x="83.82" y="2.54"/>
+</segment>
+<segment>
+<pinref part="S1" gate="G$1" pin="3"/>
+<pinref part="P+1" gate="VCC" pin="VCC"/>
+<wire x1="-50.8" y1="33.02" x2="-50.8" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -11625,6 +11696,17 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/3039.pdf"&gt;
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="-25.4" y1="-43.18" x2="-27.94" y2="-43.18" width="0.1524" layer="91"/>
 <label x="-27.94" y="-43.18" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="1"/>
+<pinref part="U1" gate="G$1" pin="2"/>
+<wire x1="-73.66" y1="27.94" x2="-76.2" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="27.94" x2="-73.66" y2="30.48" width="0.1524" layer="91"/>
+<junction x="-73.66" y="27.94"/>
+<pinref part="S1" gate="G$1" pin="2"/>
+<wire x1="-73.66" y1="30.48" x2="-71.12" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

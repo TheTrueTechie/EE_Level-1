@@ -10466,8 +10466,7 @@ Source: www.kingbright.com</description>
 <part name="Q5" library="semicon-smd-ipc" library_urn="urn:adsk.eagle:library:353" deviceset="PNP-TRANSISTOR_" device="SOT23" package3d_urn="urn:adsk.eagle:package:26310/1"/>
 <part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="IRL80A" package3d_urn="urn:adsk.eagle:package:15810/1">
 <attribute name="MOUSER#" value="782-TSAL6200"/>
-<attribute name="MPN" value="
-TSAL6200"/>
+<attribute name="MPN" value=" TSAL6200"/>
 </part>
 <part name="X_1" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_2" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
@@ -10477,6 +10476,24 @@ TSAL6200"/>
 <part name="X_6" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_7" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_8" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="5MM" package3d_urn="urn:adsk.eagle:package:15799/2">
+<attribute name="MOUSER#" value="859-LTL-307GLC"/>
+<attribute name="MPN" value="LTL-307GLC"/>
+</part>
+<part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="5MM" package3d_urn="urn:adsk.eagle:package:15799/2">
+<attribute name="MOUSER#" value="645-521-9672F"/>
+<attribute name="MPN" value="521-9672F"/>
+</part>
+<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1uF">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="MOUSER#" value="963-JMK105BJ105KV-F"/>
+<attribute name="MPN" value="JMK105BJ105KV-F"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -10684,13 +10701,31 @@ TSAL6200"/>
 <attribute name="MPN" x="139.7" y="-53.34" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="X_1" gate="G$1" x="7.62" y="10.16" smashed="yes"/>
-<instance part="X_2" gate="G$1" x="43.18" y="40.64" smashed="yes"/>
+<instance part="X_2" gate="G$1" x="43.18" y="33.02" smashed="yes"/>
 <instance part="X_3" gate="G$1" x="48.26" y="-40.64" smashed="yes"/>
 <instance part="X_4" gate="G$1" x="119.38" y="-35.56" smashed="yes"/>
 <instance part="X_5" gate="G$1" x="116.84" y="25.4" smashed="yes"/>
 <instance part="X_6" gate="G$1" x="142.24" y="-73.66" smashed="yes"/>
 <instance part="X_7" gate="G$1" x="200.66" y="-68.58" smashed="yes"/>
 <instance part="X_8" gate="G$1" x="203.2" y="10.16" smashed="yes"/>
+<instance part="LED2" gate="G$1" x="200.66" y="-35.56" smashed="yes">
+<attribute name="NAME" x="204.216" y="-40.132" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="206.375" y="-40.132" size="1.778" layer="96" rot="R90"/>
+<attribute name="MOUSER#" x="200.66" y="-35.56" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="200.66" y="-35.56" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="LED3" gate="G$1" x="203.2" y="35.56" smashed="yes">
+<attribute name="NAME" x="206.756" y="30.988" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="208.915" y="30.988" size="1.778" layer="96" rot="R90"/>
+<attribute name="MOUSER#" x="203.2" y="35.56" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="203.2" y="35.56" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C8" gate="G$1" x="43.18" y="38.1" smashed="yes">
+<attribute name="NAME" x="44.196" y="38.735" size="1.778" layer="95"/>
+<attribute name="VALUE" x="44.196" y="33.909" size="1.778" layer="96"/>
+<attribute name="MOUSER#" x="43.18" y="38.1" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="43.18" y="38.1" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10754,6 +10789,12 @@ TSAL6200"/>
 <segment>
 <pinref part="Q2" gate="G$1" pin="B"/>
 <pinref part="R4" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="0" class="0">
+<segment>
+<pinref part="X_2" gate="G$1" pin="0"/>
+<pinref part="C8" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>

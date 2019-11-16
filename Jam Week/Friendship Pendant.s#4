@@ -11413,9 +11413,9 @@ Batteries</text>
 <wire x1="142.24" y1="30.48" x2="142.24" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="TP2" gate="G$1" pin="1"/>
 <pinref part="X_2" gate="G$1" pin="0"/>
-<wire x1="-45.72" y1="15.24" x2="-45.72" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="TP2" gate="G$1" pin="1"/>
+<wire x1="-45.72" y1="7.62" x2="-45.72" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
