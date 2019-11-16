@@ -2,24 +2,24 @@ EAGLE AutoRouter Statistics:
 
 Job           : /Users/league/Desktop/EE_Level-1/Jam Week/Friendship Pendant.brd
 
-Start at      : 11:27:58 (11/9/19)
-End at        : 11:28:02 (11/9/19)
-Elapsed time  : 00:00:00
+Start at      : 10:28:33 (11/16/19)
+End at        : 10:29:48 (11/16/19)
+Elapsed time  : 00:01:10
 
-Signals       :    37   RoutingGrid: 25 mil  Layers: 2
-Connections   :    74   predefined:  0 ( 0 Vias )
+Signals       :    35   RoutingGrid: 25 mil  Layers: 2
+Connections   :    76   predefined:  74 ( 12 Vias )
 
-Router memory :   56048
+Router memory :   24964
 
 Passname          :     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00
-Number of Ripups  :         1         0         0         0         0
-max. Level        :         1         0         0         0         0
-max. Total        :        16         0         0         0         0
+Time per pass     :  00:00:00  00:00:00  00:00:00  00:00:00  00:01:10
+Number of Ripups  :         0         0         0         0         0
+max. Level        :         0         0         0         0         0
+max. Total        :         0         0         0         0         0
 
-Routed            :        74        74        74        74        74
-Vias              :        35        18        18        17        21
+Routed            :         2         2         2         2         2
+Vias              :         6         2         2         2         2
 Resolution        :   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
 Final             : 

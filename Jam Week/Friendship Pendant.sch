@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.0">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -11125,7 +11125,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/3039.pdf"&gt;
 <instance part="X_9" gate="G$1" x="68.58" y="27.94" smashed="yes"/>
 <instance part="X_10" gate="G$1" x="-15.24" y="45.72" smashed="yes"/>
 <instance part="X_4" gate="G$1" x="127" y="-43.18" smashed="yes"/>
-<instance part="X_2" gate="G$1" x="-58.42" y="-10.16" smashed="yes"/>
+<instance part="X_2" gate="G$1" x="-58.42" y="-15.24" smashed="yes"/>
 <instance part="U1" gate="G$1" x="-58.42" y="35.56" smashed="yes" rot="R270">
 <attribute name="NAME" x="-50.8" y="-6.35" size="1.778" layer="95" rot="R270" align="center-left"/>
 <attribute name="VALUE" x="-53.34" y="-6.35" size="1.778" layer="96" rot="R270" align="center-left"/>
@@ -11136,14 +11136,14 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/3039.pdf"&gt;
 <instance part="P+2" gate="VCC" x="-15.24" y="68.58" smashed="yes">
 <attribute name="VALUE" x="-17.78" y="66.04" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P+3" gate="VCC" x="-10.16" y="33.02" smashed="yes">
-<attribute name="VALUE" x="-12.7" y="30.48" size="1.778" layer="96" rot="R90"/>
+<instance part="P+3" gate="VCC" x="-10.16" y="35.56" smashed="yes">
+<attribute name="VALUE" x="-12.7" y="33.02" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="P+4" gate="VCC" x="-10.16" y="-15.24" smashed="yes">
 <attribute name="VALUE" x="-12.7" y="-17.78" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P+5" gate="VCC" x="81.28" y="7.62" smashed="yes">
-<attribute name="VALUE" x="78.74" y="5.08" size="1.778" layer="96" rot="R90"/>
+<instance part="P+5" gate="VCC" x="83.82" y="7.62" smashed="yes">
+<attribute name="VALUE" x="81.28" y="5.08" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="P+6" gate="VCC" x="139.7" y="2.54" smashed="yes">
 <attribute name="VALUE" x="137.16" y="0" size="1.778" layer="96" rot="R90"/>
@@ -11157,8 +11157,8 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/3039.pdf"&gt;
 <instance part="P+9" gate="VCC" x="142.24" y="71.12" smashed="yes">
 <attribute name="VALUE" x="139.7" y="68.58" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P+10" gate="VCC" x="45.72" y="55.88" smashed="yes" rot="R90">
-<attribute name="VALUE" x="48.26" y="53.34" size="1.778" layer="96" rot="R180"/>
+<instance part="P+10" gate="VCC" x="45.72" y="66.04" smashed="yes">
+<attribute name="VALUE" x="43.18" y="63.5" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -11280,9 +11280,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/3039.pdf"&gt;
 <junction x="127" y="-40.64"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="A" pin="GND"/>
 <wire x1="48.26" y1="30.48" x2="48.26" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="45.72" x2="50.8" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="X_9" gate="G$1" pin="0"/>
 <wire x1="68.58" y1="30.48" x2="48.26" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="27.94" x2="68.58" y2="30.48" width="0.1524" layer="91"/>
@@ -11298,6 +11296,8 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/3039.pdf"&gt;
 <junction x="68.58" y="30.48"/>
 <pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="86.36" y1="30.48" x2="86.36" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="A" pin="GND"/>
+<wire x1="50.8" y1="45.72" x2="48.26" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
@@ -11328,6 +11328,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/3039.pdf"&gt;
 <segment>
 <pinref part="U1" gate="G$1" pin="NEGATIVE_CONTACT_PAD"/>
 <pinref part="X_2" gate="G$1" pin="0"/>
+<wire x1="-58.42" y1="-15.24" x2="-58.42" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -11460,22 +11461,12 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/3039.pdf"&gt;
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
+<wire x1="-10.16" y1="33.02" x2="-10.16" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="-10.16" y1="-20.32" x2="-10.16" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
-<pinref part="IC2" gate="A" pin="V+"/>
-<wire x1="71.12" y1="-20.32" x2="78.74" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="-20.32" x2="78.74" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="78.74" y1="2.54" x2="81.28" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="2.54" x2="83.82" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="5.08" x2="81.28" y2="2.54" width="0.1524" layer="91"/>
-<junction x="81.28" y="2.54"/>
-<pinref part="P+5" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
 <pinref part="R16" gate="G$1" pin="1"/>
@@ -11498,9 +11489,20 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/3039.pdf"&gt;
 <pinref part="P+9" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="A" pin="R"/>
-<wire x1="50.8" y1="55.88" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="P+10" gate="VCC" pin="VCC"/>
+<wire x1="45.72" y1="63.5" x2="45.72" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="A" pin="R"/>
+<wire x1="45.72" y1="55.88" x2="50.8" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="A" pin="V+"/>
+<wire x1="71.12" y1="-20.32" x2="78.74" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="-20.32" x2="78.74" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="78.74" y1="2.54" x2="83.82" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="P+5" gate="VCC" pin="VCC"/>
+<wire x1="83.82" y1="5.08" x2="83.82" y2="2.54" width="0.1524" layer="91"/>
+<junction x="83.82" y="2.54"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -11536,7 +11538,15 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/3039.pdf"&gt;
 <wire x1="129.54" y1="58.42" x2="132.08" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="58.42" x2="132.08" y2="68.58" width="0.1524" layer="91"/>
 <label x="132.08" y="68.58" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="165.1" y1="38.1" x2="162.56" y2="38.1" width="0.1524" layer="91"/>
 <label x="162.56" y="38.1" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R17" gate="G$1" pin="1"/>
+<wire x1="165.1" y1="-17.78" x2="162.56" y2="-17.78" width="0.1524" layer="91"/>
 <label x="162.56" y="-17.78" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
@@ -11602,18 +11612,6 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/3039.pdf"&gt;
 <pinref part="IC2" gate="B" pin="DIS"/>
 <wire x1="129.54" y1="-12.7" x2="139.7" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="139.7" y="-12.7"/>
-</segment>
-</net>
-<net name="N$26" class="0">
-<segment>
-<pinref part="R19" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="38.1" x2="162.56" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$32" class="0">
-<segment>
-<pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="-17.78" x2="162.56" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SIGNAL" class="0">
