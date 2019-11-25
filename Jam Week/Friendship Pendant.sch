@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -10626,8 +10626,18 @@ Source: &lt;a href="http://www.nkkswitches.com/pdf/cs.pdf"&gt; Datasheet &lt;/a&
 </class>
 </classes>
 <parts>
-<part name="IC1" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="*556" device="D" package3d_urn="urn:adsk.eagle:package:16406/2" technology="LM"/>
-<part name="IC2" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="*556" device="D" package3d_urn="urn:adsk.eagle:package:16406/2" technology="LM"/>
+<part name="IC1" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="*556" device="D" package3d_urn="urn:adsk.eagle:package:16406/2" technology="LM">
+<attribute name="MOUSER#" value="511-TS556IDTTR
+"/>
+<attribute name="MPN" value="TS556IDTTR
+"/>
+</part>
+<part name="IC2" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="*556" device="D" package3d_urn="urn:adsk.eagle:package:16406/2" technology="LM">
+<attribute name="MOUSER#" value="511-TS556IDTTR
+"/>
+<attribute name="MPN" value="TS556IDTTR
+"/>
+</part>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="28.7K">
 <spice>
 <pinmapping spiceprefix="R">
@@ -10892,7 +10902,12 @@ Source: &lt;a href="http://www.nkkswitches.com/pdf/cs.pdf"&gt; Datasheet &lt;/a&
 <attribute name="MPN" value="BCW66KHE6327HTSA1"/>
 <attribute name="SPICEPREFIX" value="Q"/>
 </part>
-<part name="Q5" library="semicon-smd-ipc" library_urn="urn:adsk.eagle:library:353" deviceset="PNP-TRANSISTOR_" device="SOT23" package3d_urn="urn:adsk.eagle:package:26310/1"/>
+<part name="Q5" library="semicon-smd-ipc" library_urn="urn:adsk.eagle:library:353" deviceset="PNP-TRANSISTOR_" device="SOT23" package3d_urn="urn:adsk.eagle:package:26310/1">
+<attribute name="MOUSER#" value="583-BC856A-T
+"/>
+<attribute name="MPN" value="BC856A-T
+"/>
+</part>
 <part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="IRL80A" package3d_urn="urn:adsk.eagle:package:15810/1">
 <attribute name="MOUSER#" value="782-TSAL6200"/>
 <attribute name="MPN" value=" TSAL6200"/>
@@ -10939,7 +10954,10 @@ Source: &lt;a href="http://www.nkkswitches.com/pdf/cs.pdf"&gt; Datasheet &lt;/a&
 <part name="X_10" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_4" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_2" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="U1" library="3039" deviceset="3039" device=""/>
+<part name="U1" library="3039" deviceset="3039" device="">
+<attribute name="MOUSER#" value="534-3039"/>
+<attribute name="MPN" value="3039"/>
+</part>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
@@ -10960,6 +10978,8 @@ Source: &lt;a href="http://www.nkkswitches.com/pdf/cs.pdf"&gt; Datasheet &lt;/a&
 <instance part="IC1" gate="A" x="60.96" y="53.34" smashed="yes">
 <attribute name="NAME" x="53.34" y="64.262" size="1.778" layer="95"/>
 <attribute name="VALUE" x="53.34" y="40.513" size="1.778" layer="96"/>
+<attribute name="MOUSER#" x="60.96" y="53.34" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="60.96" y="53.34" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="IC1" gate="B" x="119.38" y="53.34" smashed="yes">
 <attribute name="NAME" x="111.76" y="61.722" size="1.778" layer="95"/>
@@ -10968,6 +10988,8 @@ Source: &lt;a href="http://www.nkkswitches.com/pdf/cs.pdf"&gt; Datasheet &lt;/a&
 <instance part="IC2" gate="A" x="60.96" y="-12.7" smashed="yes">
 <attribute name="NAME" x="53.34" y="-1.778" size="1.778" layer="95"/>
 <attribute name="VALUE" x="53.34" y="-25.527" size="1.778" layer="96"/>
+<attribute name="MOUSER#" x="60.96" y="-12.7" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="60.96" y="-12.7" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="IC2" gate="B" x="119.38" y="-12.7" smashed="yes">
 <attribute name="NAME" x="111.76" y="-4.318" size="1.778" layer="95"/>
@@ -11150,6 +11172,8 @@ Source: &lt;a href="http://www.nkkswitches.com/pdf/cs.pdf"&gt; Datasheet &lt;/a&
 <instance part="Q5" gate="G$1" x="177.8" y="-17.78" smashed="yes">
 <attribute name="NAME" x="167.64" y="-10.16" size="1.778" layer="95"/>
 <attribute name="VALUE" x="167.64" y="-12.7" size="1.778" layer="96"/>
+<attribute name="MOUSER#" x="177.8" y="-17.78" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="177.8" y="-17.78" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="LED1" gate="G$1" x="-10.16" y="-33.02" smashed="yes">
 <attribute name="NAME" x="-6.604" y="-37.592" size="1.778" layer="95" rot="R90"/>
@@ -11199,6 +11223,8 @@ Source: &lt;a href="http://www.nkkswitches.com/pdf/cs.pdf"&gt; Datasheet &lt;/a&
 <instance part="U1" gate="G$1" x="-73.66" y="27.94" smashed="yes" rot="R270">
 <attribute name="NAME" x="-66.04" y="-13.97" size="1.778" layer="95" rot="R270" align="center-left"/>
 <attribute name="VALUE" x="-68.58" y="-13.97" size="1.778" layer="96" rot="R270" align="center-left"/>
+<attribute name="MOUSER#" x="-73.66" y="27.94" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="-73.66" y="27.94" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="P+1" gate="VCC" x="-50.8" y="40.64" smashed="yes">
 <attribute name="VALUE" x="-53.34" y="38.1" size="1.778" layer="96" rot="R90"/>
