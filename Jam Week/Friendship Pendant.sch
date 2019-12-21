@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -10627,16 +10627,12 @@ Source: &lt;a href="http://www.nkkswitches.com/pdf/cs.pdf"&gt; Datasheet &lt;/a&
 </classes>
 <parts>
 <part name="IC1" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="*556" device="D" package3d_urn="urn:adsk.eagle:package:16406/2" technology="LM">
-<attribute name="MOUSER#" value="511-TS556IDTTR
-"/>
-<attribute name="MPN" value="TS556IDTTR
-"/>
+<attribute name="MOUSER#" value="511-TS556IDTTR "/>
+<attribute name="MPN" value="TS556IDTTR "/>
 </part>
 <part name="IC2" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="*556" device="D" package3d_urn="urn:adsk.eagle:package:16406/2" technology="LM">
-<attribute name="MOUSER#" value="511-TS556IDTTR
-"/>
-<attribute name="MPN" value="TS556IDTTR
-"/>
+<attribute name="MOUSER#" value="511-TS556IDTTR "/>
+<attribute name="MPN" value="TS556IDTTR "/>
 </part>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="28.7K">
 <spice>
@@ -10903,10 +10899,8 @@ Source: &lt;a href="http://www.nkkswitches.com/pdf/cs.pdf"&gt; Datasheet &lt;/a&
 <attribute name="SPICEPREFIX" value="Q"/>
 </part>
 <part name="Q5" library="semicon-smd-ipc" library_urn="urn:adsk.eagle:library:353" deviceset="PNP-TRANSISTOR_" device="SOT23" package3d_urn="urn:adsk.eagle:package:26310/1">
-<attribute name="MOUSER#" value="583-BC856A-T
-"/>
-<attribute name="MPN" value="BC856A-T
-"/>
+<attribute name="MOUSER#" value="583-BC856A-T "/>
+<attribute name="MPN" value="BC856A-T "/>
 </part>
 <part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="IRL80A" package3d_urn="urn:adsk.eagle:package:15810/1">
 <attribute name="MOUSER#" value="782-TSAL6200"/>
@@ -10969,6 +10963,7 @@ Source: &lt;a href="http://www.nkkswitches.com/pdf/cs.pdf"&gt; Datasheet &lt;/a&
 <part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="S1" library="CS12ANW03" deviceset="CS12ANW03" device=""/>
+<part name="X_11" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11260,6 +11255,10 @@ Source: &lt;a href="http://www.nkkswitches.com/pdf/cs.pdf"&gt; Datasheet &lt;/a&
 <attribute name="NAME" x="-72.39" y="40.64" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="-72.39" y="38.1" size="1.778" layer="96" align="center-left"/>
 </instance>
+<instance part="IC3" gate="P" x="15.24" y="53.34" smashed="yes">
+<attribute name="NAME" x="14.605" y="52.705" size="1.778" layer="95"/>
+</instance>
+<instance part="X_11" gate="G$1" x="15.24" y="43.18" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -11429,6 +11428,11 @@ Source: &lt;a href="http://www.nkkswitches.com/pdf/cs.pdf"&gt; Datasheet &lt;/a&
 <pinref part="U1" gate="G$1" pin="NEGATIVE_CONTACT_PAD"/>
 <pinref part="X_2" gate="G$1" pin="0"/>
 <wire x1="-73.66" y1="-22.86" x2="-73.66" y2="-17.78" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X_11" gate="G$1" pin="0"/>
+<pinref part="IC3" gate="P" pin="GND"/>
+<wire x1="15.24" y1="43.18" x2="15.24" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">

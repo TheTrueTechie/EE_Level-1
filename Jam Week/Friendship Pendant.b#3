@@ -2157,7 +2157,6 @@ design rules under a new name.</description>
 <contactref element="Q2" pad="2"/>
 <contactref element="C2" pad="2"/>
 <contactref element="C1" pad="2"/>
-<contactref element="IC1" pad="7"/>
 <contactref element="C8" pad="2"/>
 <contactref element="C5" pad="2"/>
 <contactref element="C6" pad="2"/>
@@ -2183,7 +2182,6 @@ design rules under a new name.</description>
 <wire x1="60.48375" y1="51.7525" x2="61.75375" y2="53.0225" width="0.1524" layer="1"/>
 <wire x1="60.48375" y1="49.53" x2="60.48375" y2="51.7525" width="0.1524" layer="1"/>
 <wire x1="61.75375" y1="54.13375" x2="61.91" y2="54.145" width="0.1524" layer="1"/>
-<wire x1="60.48375" y1="49.53" x2="60.385" y2="49.53" width="0.1524" layer="1"/>
 <wire x1="59.69" y1="60.16625" x2="59.3725" y2="60.16625" width="0.1524" layer="1"/>
 <wire x1="62.38875" y1="57.4675" x2="59.69" y2="60.16625" width="0.1524" layer="1"/>
 <wire x1="62.38875" y1="54.9275" x2="62.38875" y2="57.4675" width="0.1524" layer="1"/>
@@ -2234,6 +2232,8 @@ design rules under a new name.</description>
 <via x="37.1475" y="51.1175" extent="1-16" drill="0.35"/>
 <via x="50.95875" y="49.68875" extent="1-16" drill="0.35"/>
 <via x="60.48375" y="51.7525" extent="1-16" drill="0.35"/>
+<contactref element="IC1" pad="7"/>
+<wire x1="60.48375" y1="49.53" x2="60.385" y2="49.53" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$11">
 <contactref element="IR1" pad="VO"/>

@@ -2031,19 +2031,19 @@ design rules under a new name.</description>
 <attribute name="NAME" x="51.251" y="47.046" size="1.27" layer="26" rot="MR0" align="center"/>
 <attribute name="VALUE" x="51.251" y="48.316" size="1.27" layer="28" rot="MR0" align="center"/>
 </element>
-<element name="S1" library="CS12ANW03" package="CS12ANW03" value="CS12ANW03" x="21.336" y="31.242" smashed="yes">
-<attribute name="ALLIED_NUMBER" value="70228233" x="21.336" y="31.242" size="1.778" layer="27" display="off"/>
-<attribute name="ALLIED_PRICE-STOCK" value="https://www.alliedelec.com/nkk-switches-cs12anw03/70228233/" x="21.336" y="31.242" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value="NKK SWITCHES - CS12ANW03 - SWITCH, SLIDE, SPDT, 3A, 250V, TH" x="21.336" y="31.242" size="1.778" layer="27" display="off"/>
-<attribute name="HEIGHT" value="mm" x="21.336" y="31.242" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="NKK Switches" x="21.336" y="31.242" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="CS12ANW03" x="21.336" y="31.242" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="633-CS12ANW03" x="21.336" y="31.242" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=633-CS12ANW03" x="21.336" y="31.242" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="20.722" y="39.21" size="1.27" layer="25" align="center"/>
-<attribute name="RS_PART_NUMBER" value="1251847" x="21.336" y="31.242" size="1.778" layer="27" display="off"/>
-<attribute name="RS_PRICE-STOCK" value="http://uk.rs-online.com/web/p/products/1251847" x="21.336" y="31.242" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="20.722" y="39.21" size="1.27" layer="27" align="center"/>
+<element name="S1" library="CS12ANW03" package="CS12ANW03" value="CS12ANW03" x="21.336" y="27.813" smashed="yes">
+<attribute name="ALLIED_NUMBER" value="70228233" x="21.336" y="27.813" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_PRICE-STOCK" value="https://www.alliedelec.com/nkk-switches-cs12anw03/70228233/" x="21.336" y="27.813" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="NKK SWITCHES - CS12ANW03 - SWITCH, SLIDE, SPDT, 3A, 250V, TH" x="21.336" y="27.813" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="21.336" y="27.813" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="NKK Switches" x="21.336" y="27.813" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="CS12ANW03" x="21.336" y="27.813" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="633-CS12ANW03" x="21.336" y="27.813" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=633-CS12ANW03" x="21.336" y="27.813" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="21.484" y="36.162" size="1.27" layer="25" align="center"/>
+<attribute name="RS_PART_NUMBER" value="1251847" x="21.336" y="27.813" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PRICE-STOCK" value="http://uk.rs-online.com/web/p/products/1251847" x="21.336" y="27.813" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="20.722" y="35.781" size="1.27" layer="27" align="center"/>
 </element>
 </elements>
 <signals>
@@ -2084,7 +2084,7 @@ design rules under a new name.</description>
 <wire x1="31.115" y1="35.245" x2="34.925" y2="39.37" width="0" layer="19" extent="1-1"/>
 <wire x1="37.15" y1="29.845" x2="31.115" y2="35.245" width="0" layer="19" extent="1-1"/>
 <wire x1="41.595" y1="29.675" x2="37.15" y2="29.845" width="0" layer="19" extent="1-1"/>
-<wire x1="21.336" y1="35.942" x2="31.115" y2="35.245" width="0" layer="19" extent="1-1"/>
+<wire x1="21.336" y1="32.513" x2="31.115" y2="35.245" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="R2" pad="1"/>
@@ -2563,7 +2563,7 @@ design rules under a new name.</description>
 <contactref element="U1" pad="2"/>
 <contactref element="S1" pad="2"/>
 <wire x1="38.1" y1="46.99" x2="63.5" y2="46.99" width="0" layer="19" extent="1-1"/>
-<wire x1="21.336" y1="31.242" x2="38.1" y2="46.99" width="0" layer="19" extent="1-1"/>
+<wire x1="21.336" y1="27.813" x2="38.1" y2="46.99" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
